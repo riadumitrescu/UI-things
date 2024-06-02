@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Grid with Buttons</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: Arial, sans-serif;
+        }
+
+        .title-section {
+            width: 100%;
+            padding: 20px;
+            text-align: center;
+            background-color: #f4f4f4;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .title-section h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            width: 100vw;
+            height: calc(100vh - 60px); /* Subtract title section height */
+            box-sizing: border-box;
+        }
+
+        .container > div {
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-sizing: border-box;
+            aspect-ratio: 1 / 1;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="title-section">
+        <h1>UI Elements</h1>
+    </div>
+    <div class="container">
+        <!-- 10 rows with 5 columns each -->
+        <div><button>text</button></div>
+        <div><button>text</button></div>
+        <div><button>text</button></div>
+        <div><button>text</button></div>
+        <div><button>text</button></div>
+
+        <div><button>text</button></div>
+        <div><button>text</button></div>
+        <div><button>text</button></div>
+        <div><button>text</button></div>
+        <div><button>text</button></div>
+
+        <div><button>text</button></div>
+        <div><button>text</button></div>
+        <div><button>text</button></div>
+        <div><button>text</button></div>
+        <div><button>text</button></div>
+
+        <div><button>text</button></div>
+        <div><button>text</button></div>
+        <div><button>text</button></div>
+        <div><button>text</button></div>
+        <div><button>text</button></div>
+
+        <div><button>text</button></div>
+        <div><button>text</button></div>
+        <div><button>text</button></div>
+        <div><button>text</button></div>
+        <div><button>text</button></div>
+
+        <div><button>text</button></div>
+        <div><button>text</button></div>
+        <div><button>text</button></div>
+        <div><button>text</button></div>
+        <div><button>text</button></div>
+
+        <div><button>text</button></div>
+        <div><button>text</button></div>
+        <div><button>text</button></div>
+        <div><button>text</button></div>
+        <div><button>text</button></div>
+
+        <div><button>text</button></div>
+        <div><button>text</button></div>
+        <div><button>text</button></div>
+        <div><button>text</button></div>
+        <div><button>text</button></div>
+
+        <div><button>text</button></div>
+        <div><button>text</button></div>
+        <div><button>text</button></div>
+        <div><button>text</button></div>
+        <div><button>text</button></div>
+
+        <div><button>text</button></div>
+        <div><button>text</button></div>
+        <div><button>text</button></div>
+        <div><button>text</button></div>
+        <div><button>text</button></div>
+    </div>
+</body>
+</html>
